@@ -359,8 +359,8 @@
               </div>
               <div class="row">
                 <div class="col-md-6">
-                  <a class="portfolio-item" href="#">
-                    <div class="portfolio-thumb">
+                  <div class="portfolio-item" >
+                    <div class="portfolio-thumb" onclick="showImage('images/nmessenger.jpg')">
                       <img src="images/nmessenger.jpg" alt="">
                     </div>
                     <div class="portfolio-info">
@@ -368,12 +368,12 @@
                       <small>http://175.29.196.92</small>
                     </div>
 
-                  </a>
+                  </div>
 
                 </div>
                 <div class="col-md-6">
-                  <a class="portfolio-item" href="#">
-                    <div class="portfolio-thumb">
+                  <div class="portfolio-item" >
+                    <div class="portfolio-thumb" onclick="showImage('images/requisition_system.jpg')">
                       <img src="images/requisition_system.jpg" alt="">
                     </div>
                     <div class="portfolio-info">
@@ -381,99 +381,145 @@
                       <small>rqs1.nassa.com.bd</small>
                     </div>
 
-                  </a>
+                  </div>
 
                 </div>
                 <div class="col-md-6">
-                  <a class="portfolio-item" href="#">
-                    <div class="portfolio-thumb">
+                  <div class="portfolio-item">
+                    <div class="portfolio-thumb" onclick="showImage('images/nassagroup.jpg')">
                       <img src="images/nassagroup.jpg" alt="">
                     </div>
                     <div class="portfolio-info">
                       <h3>NASSA Group</h3>
                       <small>www.nassa.com.bd</small>
                     </div>
-                  </a>
+                  </div>
                 </div>
 
                 <div class="col-md-6">
-                  <a class="portfolio-item" href="#">
-                    <div class="portfolio-thumb">
+                  <div class="portfolio-item">
+                    <div class="portfolio-thumb" onclick="showImage('images/chl_soft.jpg')">
                       <img src="images/chl_soft.jpg" alt="">
                     </div>
                     <div class="portfolio-info">
                       <h3>CHL Soft</h3>
                       <small>soft.comforthousing.net</small>
                     </div>
-                  </a>
+                  </div>
                 </div>
 
                 <div class="col-md-6">
-                  <a class="portfolio-item" href="#">
-                    <div class="portfolio-thumb">
+                  <div class="portfolio-item">
+                    <div class="portfolio-thumb" onclick="showImage('images/comfort_housing.jpg')">
                       <img src="images/comfort_housing.jpg" alt="">
                     </div>
                     <div class="portfolio-info">
                       <h3>Comfort Housing Limited</h3>
                       <small>www.comforthousing.net</small>
                     </div>
-                  </a>
+                  </div>
                 </div>
 
                 
 
                 <div class="col-md-6">
-                  <a class="portfolio-item" href="#">
-                    <div class="portfolio-thumb">
+                  <div class="portfolio-item">
+                    <div class="portfolio-thumb" onclick="showImage('images/nsx.jpg')">
                       <img src="images/nsx.jpg" alt="" >
                     </div>
                     <div class="portfolio-info">
                       <h3>NSX - Internal Ecommerce</h3>
                       <small>ecom.nassa.cloud</small>
                     </div>
-                  </a>
+                  </div>
                 </div>
 
+
                 <div class="col-md-6">
-                  <a class="portfolio-item" href="#">
-                    <div class="portfolio-thumb">
+                  <div class="portfolio-item">
+                    <div class="portfolio-thumb" onclick="showImage('images/ascendfinance.jpg')" >
                       <img src="images/ascendfinance.jpg" alt="">
                     </div>
                     <div class="portfolio-info">
                       <h3>Ascend Finance LLC</h3>
                       <small>www.ascendfinancellc.com</small>
                     </div>
-                  </a>
+                  </div>
                 </div>
 
+
                 <div class="col-md-6">
-                  <a class="portfolio-item" href="#">
-                    <div class="portfolio-thumb">
+                  <div class="portfolio-item">
+                    <div class="portfolio-thumb" onclick="showImage('images/nassacloud.jpg')">
                       <img src="images/nassacloud.jpg" alt="">
                     </div>
                     <div class="portfolio-info">
                       <h3>NASSA Cloud</h3>
                       <small>www.nassa.cloud</small>
                     </div>
-                  </a>
+                  </div>
                 </div>
 
+
+                
+
                 <div class="col-md-6">
-                  <a class="portfolio-item" href="#">
-                    <div class="portfolio-thumb">
+                  <div class="portfolio-item" >
+                    <div class="portfolio-thumb" onclick="showImage('images/waven.jpg')">
                       <img src="images/waven.jpg" alt="">
                     </div>
                     <div class="portfolio-info">
                       <h3>WAVEN</h3>
                       <small>waven.nassa.cloud</small>
                     </div>
-                  </a>
+                  </div>
                 </div>
 
 
               </div>
             </div>
           </section>
+
+
+
+
+
+
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="image_id">
+          </div>
+
+
+          <script>
+            var modal = document.getElementById("myModal");
+            function showImage(image) {
+              var image_id = document.getElementById("image_id");
+              modal.style.display = "block";
+              image_id.src = image;
+
+            }
+            var span = document.getElementsByClassName("close")[0];
+            span.onclick = function () {
+              modal.style.display = "none";
+            }
+          </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
           <section class="section-contact section-wrapper gray-bg">
             <div class="container-fluid">

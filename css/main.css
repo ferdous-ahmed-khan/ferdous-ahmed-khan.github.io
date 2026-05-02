@@ -731,15 +731,15 @@ section {
   }
 
   .timeline::before {
-    left: 16px;
+    display: none;
   }
 
   .timeline {
-    padding-left: 48px;
+    padding-left: 0;
   }
 
   .timeline-dot {
-    left: 12px;
+    display: none;
   }
 }
 

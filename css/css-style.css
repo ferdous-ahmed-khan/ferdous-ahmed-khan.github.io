@@ -479,6 +479,30 @@ button:focus,
     color : #888888;
     }
 
+.content-item .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+    }
+
+.content-item .tag {
+    background-color: #f4f4f4;
+    color: #444444;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px solid #eaeaea;
+    transition: all 0.3s ease;
+    }
+
+.content-item .tag:hover {
+    background-color: #FFC107;
+    color: #ffffff;
+    border-color: #FFC107;
+    }
+
 /*-------------------
  * Contact
  *-------------------*/

@@ -426,7 +426,8 @@ section {
 }
 
 .skill-category .tags,
-.learning-tags {
+.learning-tags,
+.interests-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -475,6 +476,19 @@ section {
 .badge:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.badge.interest {
+  border-color: rgba(167, 139, 250, 0.3);
+  color: #c4b5fd;
+  background: rgba(167, 139, 250, 0.03);
+}
+
+.badge.interest:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 0 15px rgba(167, 139, 250, 0.2);
+  border-color: rgba(167, 139, 250, 0.6);
+  color: #ddd6fe;
 }
 
 /* Experience Timeline */
@@ -607,7 +621,7 @@ section {
 }
 
 /* Education */
-#education, #experience {
+#education, #experience, #expertise {
   margin-top: 40px;
 }
 
